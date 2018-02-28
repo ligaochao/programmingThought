@@ -1,0 +1,9 @@
+一 
+
+采用占位符的思想
+举例
+orderMap = "grep '/client_init_setings.htm?actionType=CLIENT_INIT_SETINGS&platformID=0&appVersion=5.1.0&channelID=bseo' web*_nginx_access_bak.???? |wc -l >> total.log;"
+需要循环执行某个指令，又不想用字符串拼接的形式，就可以用占位符，占据着某个位置
+然后执行
+command4 = orderMap.replace('????',obj)
+这样就轻而易举的做到了
